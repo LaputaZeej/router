@@ -1,0 +1,9 @@
+include ':rounter-api'
+include ':person'
+include ':login'
+include ':compiler'
+include ':annotations'
+include ':javapoet'
+include ':base'
+include ':app'
+rootProject.name = "Laputa_module_01"

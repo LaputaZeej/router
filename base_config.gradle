@@ -1,0 +1,31 @@
+println "[ base config ] ${this.name}  ${this.buildFile.name}"
+ext {
+
+    isRelease = true
+    id = "zeej"
+
+    base_android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "30.0.0",
+            minSdkVersion    : 23,
+            targetSdkVersion : 29
+    ]
+
+    module_id_key = "module_id"
+    packageNameForAPT_key = "packageNameForAPT"
+    packageNameForAPT = "com.laptuta.apt.zeej"
+
+    module_id=[
+            base:""
+    ]
+
+    url = [
+            debug:"",
+            release:"http://"
+    ]
+
+    app_dependencies=[
+            "a":"",
+            "okhttp":""
+    ]
+}
