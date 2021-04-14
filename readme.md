@@ -1,8 +1,18 @@
+# 涉及知识点
+组件化
+路由
+APT
+JavaPoet
+Gradle插件
+ASM
+ARouter
+等
 
-ARouter中文文档
+# 帮助
+## ARouter中文文档
 https://github.com/alibaba/ARouter/blob/master/README_CN.md
 
-AutoRegister:一种更高效的组件自动注册方案(android组件化开发)
+## AutoRegister:一种更高效的组件自动注册方案(android组件化开发)
 https://juejin.cn/post/6844903520429162509
 
 >在组件化开发框架中，可有助于实现分级按需加载的功能：
@@ -11,11 +21,14 @@ https://juejin.cn/post/6844903520429162509
 >若组件中有很多功能提供给外部调用，可以将这些功能包装成多个Processor，并将它们自动注册到组件中进行管理
 >组件被初次调用时再加载这些Processor
 
-ARouter简介 最佳实践
+## ARouter简介 最佳实践
 https://developer.aliyun.com/article/71687
 
-CC
+## CC
 https://github.com/luckybilly/CC
 
-对比
+## 对比
 https://github.com/luckybilly/AndroidComponentizeLibs
+
+## Gradle插件
+https://blog.csdn.net/sbsujjbcy/article/details/50782830
