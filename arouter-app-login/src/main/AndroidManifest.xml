@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.laputa.router.login">
+
+    <application>
+        <activity android:name=".Module02Activity"></activity>
+        <activity android:name=".Module01Activity" />
+        <activity
+            android:name=".LoginActivity"
+            android:configChanges="keyboardHidden" />
+    </application>
+
+</manifest>

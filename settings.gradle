@@ -1,3 +1,7 @@
+include ':arouter-common-service'
+include ':arouter-app-info'
+include ':arouter-app-login'
+include ':arouter-app'
 include ':rounter-api'
 include ':person'
 include ':login'
