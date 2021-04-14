@@ -1,0 +1,28 @@
+plugins {
+    id 'groovy'
+    id 'maven'
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation gradleApi()
+    implementation localGroovy()
+}
+
+repositories {
+    mavenCentral()
+}
+
+// 发布到本地仓库
+group = "com.laputa.router.auto.plugin"
+version = "1.0.0"
+
+uploadArchives{
+    repositories {
+        mavenDeployer{
+            repository(url:uri('../repo'))
+        }
+    }
+}
+

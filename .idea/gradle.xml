@@ -18,12 +18,12 @@
             <option value="$PROJECT_DIR$/arouter-app-login" />
             <option value="$PROJECT_DIR$/arouter-common-service" />
             <option value="$PROJECT_DIR$/base" />
-            <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/compiler" />
             <option value="$PROJECT_DIR$/javapoet" />
             <option value="$PROJECT_DIR$/login" />
             <option value="$PROJECT_DIR$/person" />
             <option value="$PROJECT_DIR$/rounter-api" />
+            <option value="$PROJECT_DIR$/router-auto-register" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

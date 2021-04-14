@@ -1,8 +1,0 @@
-object Versions{
-     val sup = "222"
-
-}
-
-object Libs{
-     val target = "xxxx"
-}

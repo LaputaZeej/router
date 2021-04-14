@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'plugin.autorouter'
 
 println "[ app ] ${this.buildFile.name}"
 println this.rootProject.ext.id
