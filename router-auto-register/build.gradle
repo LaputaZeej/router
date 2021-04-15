@@ -3,6 +3,21 @@ plugins {
     id 'maven'
 }
 
+sourceSets{
+    main{
+        groovy{
+            srcDir 'src/main/groovy'
+        }
+        java{
+            srcDir 'src/main/java'
+        }
+
+        resources{
+            srcDir 'src/main/resources'
+        }
+    }
+}
+
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -16,7 +31,7 @@ repositories {
 
 // 发布到本地仓库
 group = "com.laputa.router.auto.plugin"
-version = "1.0.0"
+version = "1.0.3"
 
 uploadArchives{
     repositories {

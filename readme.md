@@ -1,15 +1,14 @@
 # 涉及知识点
-组件化
-路由
-APT
-JavaPoet
-Gradle插件
-ASM
-ARouter
-等
+## 组件化
+## 路由
+## APT
+## JavaPoet
+## Gradle插件
+## ASM
+## ARouter
 
 # 帮助
-## ARouter中文文档
+## ARouter
 https://github.com/alibaba/ARouter/blob/master/README_CN.md
 
 ## AutoRegister:一种更高效的组件自动注册方案(android组件化开发)

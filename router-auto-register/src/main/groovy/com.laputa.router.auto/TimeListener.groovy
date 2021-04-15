@@ -1,3 +1,5 @@
+package com.laputa.router.auto
+
 import org.gradle.BuildListener
 import org.gradle.BuildResult
 import org.gradle.api.Task

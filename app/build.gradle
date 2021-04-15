@@ -77,3 +77,15 @@ dependencies {
     }
 
 }
+
+// 传递自定义参数 plugin.autorouter
+zeejArgs{
+    sender='zeeeeeeeeeeeeeeej'
+    message='i iiiiiiiiiiiiiiiii'
+
+    // 嵌套参数
+    zeejNestArgs{
+        id = "zeeeeej id"
+        email = "363633726@qq.com"
+    }
+}
