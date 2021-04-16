@@ -5,6 +5,9 @@
 ## JavaPoet
 ## Gradle插件
 ## ASM
+这是一个相关的链接
+https://github.com/SusionSuc/AdvancedAndroid/blob/master/gradle/README.md
+
 ASM 是一个 Java 字节码操控框架。它能被用来动态生成类或者增强既有类的功能。ASM 可以直接产生二进制 class 文件，
 也可以在类被加载入 Java 虚拟机之前动态改变类行为。Java class 被存储在严格格式定义的 .class 文件里，这些类文件
 拥有足够的元数据来解析类中的所有元素：类名称、方法、属性以及 Java 字节码（指令）。ASM 从类文件中读入信息后，能
@@ -38,6 +41,10 @@ https://juejin.cn/post/6844903520429162509
 >在组件框架第一次被调用时加载此注册表
 >若组件中有很多功能提供给外部调用，可以将这些功能包装成多个Processor，并将它们自动注册到组件中进行管理
 >组件被初次调用时再加载这些Processor
+
+*AndAop*
+https://github.com/luckybilly/AndAOP
+一个aop方案：通过配置aop类和方法，修改class来实现在方法的前后添加自定义逻辑。
 
 ## ARouter简介 最佳实践
 https://developer.aliyun.com/article/71687

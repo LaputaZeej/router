@@ -1,10 +1,12 @@
 package com.laputa.router.login
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import com.alibaba.android.arouter.facade.annotation.Autowired
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.alibaba.android.arouter.launcher.ARouter
@@ -83,6 +85,8 @@ class LoginActivity : AppCompatActivity() {
             toast(if (edit) "修改成功！" else "修改失败！")
             info(if (edit) "修改成功！" else "修改失败！")
         }
+
+
     }
 
     private fun info(msg: String) {

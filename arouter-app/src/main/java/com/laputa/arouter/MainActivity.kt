@@ -1,6 +1,7 @@
 package com.laputa.arouter
 
 import android.content.Context
+import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -10,6 +11,8 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityOptionsCompat
+import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.facade.Postcard
 import com.alibaba.android.arouter.facade.callback.NavigationCallback
 import com.alibaba.android.arouter.launcher.ARouter
@@ -177,15 +180,41 @@ class MainActivity : AppCompatActivity() {
 
         addButton("错误的class") {
 //            tryCatching {
-                ARouter.getInstance().navigation(LoginActivity::class.java)
+            ARouter.getInstance().navigation(LoginActivity::class.java)
 //            }
         }
 
-        addButton {
+        addButton("startActivityForResult") {
             tryCatching {
-
+                ARouter.getInstance().build("/login/module01").navigation(this, 999)
             }
         }
+
+        addButton("fragment") {
+            tryCatching {
+                val navigation =
+                    ARouter.getInstance().build("/login/LoginFragment").navigation() as DialogFragment
+                navigation.show(supportFragmentManager,"test")
+            }
+        }
+
+        addButton("动态添加path") {
+            tryCatching {
+                toast("删除了？")
+            }
+        }
+
+
+        addButton("兼容") {
+            tryCatching {
+                toast("删除了？")
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        toast("onActivityResult ${data?.extras?.getString("zeej") ?: "null data"}")
     }
 
     private fun addButton(text: String = "点我", block: (View) -> Unit) {
