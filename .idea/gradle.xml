@@ -22,6 +22,7 @@
             <option value="$PROJECT_DIR$/javapoet" />
             <option value="$PROJECT_DIR$/login" />
             <option value="$PROJECT_DIR$/person" />
+            <option value="$PROJECT_DIR$/plugin-log" />
             <option value="$PROJECT_DIR$/rounter-api" />
             <option value="$PROJECT_DIR$/router-auto-register" />
           </set>

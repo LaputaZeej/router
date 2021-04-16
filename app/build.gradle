@@ -3,6 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'plugin.autorouter'
+apply plugin: 'com.zeej.laputa.logplugin'
 
 println "[ app ] ${this.buildFile.name}"
 println this.rootProject.ext.id
@@ -36,6 +37,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 tasks.withType(JavaCompile) {
@@ -66,7 +72,7 @@ dependencies {
     implementation project(":base")
     implementation project(":rounter-api")
 
-    implementation project(":annotations")
+    //implementation project(":annotations")
 
     kapt project(":compiler")
 
@@ -75,6 +81,7 @@ dependencies {
         implementation project(":person")
         implementation project(":login")
     }
+
 
 }
 

@@ -75,8 +75,8 @@ public class HRounterCompiler extends AbstractProcessor {
             println("注解 is empty");
             return false;
         }
-        testJavaPoet();
-        testPoet2(roundEnvironment);
+        //testJavaPoet();
+        //testPoet2(roundEnvironment);
         TypeElement activityTypeElement = elementUtils.getTypeElement(Constant.ACTIVITY_PACKAGE_NAME);
         TypeMirror activityTypeMirror = activityTypeElement.asType();
         Set<? extends Element> elements = roundEnvironment.getElementsAnnotatedWith(HRouter.class);
